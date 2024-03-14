@@ -12,8 +12,10 @@ def calculator_probability(event_type: str, event: int) -> float:
         prob = 1/2
         return prob
     elif event_type == "dice":
-        prob = 1/6
-        return prob
+       if 1 <= event <= 6:
+          return 1/6
+       else:
+          return 0
      
     #  ваш код дальнейшей реализации здесь???
     
