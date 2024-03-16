@@ -1,4 +1,6 @@
-def calculator_probability(event_type: str, event: int) -> float:
+from main import get_value
+
+def calculator_probability() -> float:
     """
     Вычисляет вероятность события. 
      
@@ -8,15 +10,16 @@ def calculator_probability(event_type: str, event: int) -> float:
     Return: 
         Веротность события
     """
+    
+    
+    event_type, event  = get_value()
     if event_type == "coin": 
-        prob = 1/2
-        return prob
+        prob = 1/2 * 100
+        return f'{prob}%'
     elif event_type == "dice":
-       if 1 <= event <= 6:
-          return 1/6
-       else:
-          return 0
-     
+        return f'{round((1 / 6) * 100)}%'
+
+#print(calculator_probability())
     #  ваш код дальнейшей реализации здесь???
     
     # иначе: ???
