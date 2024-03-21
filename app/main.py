@@ -1,8 +1,10 @@
 # одключаем ядро
+from typing import Tuple, Union
 
 
+# Union - условная констуркция объединяет 2 типа данных
 # Прописание инпуты:
-def get_value():
+def get_value() -> Tuple[str, Union[int, str]]:
     """
     Принимает занчения
 

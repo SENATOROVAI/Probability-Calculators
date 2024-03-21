@@ -1,6 +1,6 @@
 from main import get_value
 
-
+requirements.txt
 def calculator_probability() -> float:
     """
     Вычисляет вероятность события.
@@ -21,7 +21,6 @@ def calculator_probability() -> float:
 
 
 # print(calculator_probability())
-#  ваш код дальнейшей реализации здесь???
-dla,dlamdlammf
+#  ваш код дальнейшей реализации здесь???r
 # иначе: ???
 #     райс велью еррор (неверный тип события)??
