@@ -1,6 +1,5 @@
-Из app импортируем main 
+from app import main
 
-используй матч:
-    кейс: 
-        Запуск приложения
-        
+match __name__:
+    case "__main__":
+        main()

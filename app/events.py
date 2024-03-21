@@ -1,4 +1,4 @@
-from probability import calculator_probability
+from .probability import calculator_probability
 
 
 def two_coins(a, b):

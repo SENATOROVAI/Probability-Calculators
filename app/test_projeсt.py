@@ -10,7 +10,7 @@ class TestProbability(unittest.TestCase):
         # Например, можно использовать mock из библиотеки unittest.mock
         from unittest.mock import patch
 
-        with patch("main.get_value", return_value=("coin", "heads")):
+        with patch("app.main", return_value=("coin", "heads")):
             result = calculator_probability()
             self.assertEqual(result, "50.0%")
 
@@ -18,7 +18,7 @@ class TestProbability(unittest.TestCase):
         # Здесь вы должны подменить функцию get_value, чтобы она возвращала "dice" и любое значение
         from unittest.mock import patch
 
-        with patch("main.get_value", return_value=("dice", 1)):
+        with patch("app.main", return_value=("dice", 1)):
             result = calculator_probability()
             self.assertEqual(result, "16.7%")
 

@@ -1,10 +1,9 @@
-# одключаем ядро
 from typing import Tuple, Union
 
 
 # Union - условная констуркция объединяет 2 типа данных
 # Прописание инпуты:
-def get_value() -> Tuple[str, Union[int, str]]:
+def main() -> Tuple[str, Union[int, str]]:
     """
     Принимает занчения
 
@@ -35,11 +34,3 @@ def get_value() -> Tuple[str, Union[int, str]]:
         while event > 6 or event < 1:
             event = int(input("Повторите выбор числа на кубике:\nОт 1 до 6\n"))
         return type, event
-
-
-# def get():
-#     b = get_value()
-#     return b
-# print(get())
-# print(get_value())
-# старт проекта(вызов функций)
