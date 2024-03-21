@@ -1,6 +1,6 @@
 from main import get_value
 
-requirements.txt
+
 def calculator_probability() -> float:
     """
     Вычисляет вероятность события.
