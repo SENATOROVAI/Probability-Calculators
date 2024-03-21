@@ -22,6 +22,6 @@ def calculator_probability() -> float:
 
 # print(calculator_probability())
 #  ваш код дальнейшей реализации здесь???
-
+dla,dlamdlammf
 # иначе: ???
 #     райс велью еррор (неверный тип события)??
