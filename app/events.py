@@ -1,6 +1,4 @@
-from .probability import (
-    calculator_probability,
-)  # из текущей директории файла ппробабилите мы импортируем только одну функция калькулятор прабабилити
+from app import calculator_probability  # из текущей директории файла ппробабилите мы импортируем только одну функция калькулятор прабабилити
 
 def two_coins(
     a: int, b: int
@@ -40,6 +38,4 @@ def variation():
             return f"{round(var * 100, 2)}%"
         else:
             return f"{round((var ** count) * 100, 2)}%"
-
-
 print(variation())

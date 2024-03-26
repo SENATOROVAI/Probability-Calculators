@@ -1,8 +1,6 @@
 from app import main
 
-
-
-def calculator_probability(a) -> float:
+def calculator_probability() -> float:
     """
     Вычисляет вероятность события.
 
@@ -18,4 +16,3 @@ def calculator_probability(a) -> float:
         return prob #f"{prob}%"
     elif event_type == "dice":
         return (1 / 6)
-    
