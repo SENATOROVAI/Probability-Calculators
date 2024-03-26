@@ -1,5 +1,5 @@
-from app import main
+from app import events
 
 match __name__:
-    case "__main__":
-        main()
+    case "__events__":
+        events.variation()
