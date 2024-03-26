@@ -1,4 +1,4 @@
-from .probability import calculator_probability
+from probability import calculator_probability
 
 
 def two_coins(a, b):
@@ -19,3 +19,21 @@ def two_dice(a, b):
     """
     prob_2_coins = calculator_probability("dice", a) ** b
     return prob_2_coins
+
+
+def variation():
+    var = calculator_probability()
+    if var > 0.4:
+        count = int(input('Количество подряд выпадающий вариаций монетки: '))
+        if count == 1:
+            return f"{round(var * 100, 2)}%"
+        else:
+            return f"{round((var ** count) * 100, 2)}%"
+    else:
+        count = int(input('Количество подряд выпадающий вариаций кубика: '))
+        if count == 1:
+            return f"{round(var * 100, 2)}%"
+        else:
+            return f"{round((var ** count) * 100, 2)}%"
+        
+print(variation())

@@ -1,4 +1,5 @@
-from .app import main
+from app import main
+
 
 
 def calculator_probability(a) -> float:
@@ -11,10 +12,10 @@ def calculator_probability(a) -> float:
     Return:
         Веротность события
     """
+    event_type, event = main()
+    if event_type == "coin":
+        prob = 1 / 2 
+        return prob #f"{prob}%"
+    elif event_type == "dice":
+        return (1 / 6)
 
-    
-    if a == "coin":
-        prob = 1 / 2 * 100
-        return f"{prob}%"
-    elif a == "dice":
-        return f"{round((1 / 6) * 100, 1)}%"
