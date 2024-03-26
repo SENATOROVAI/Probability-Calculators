@@ -2,7 +2,7 @@ from app import main
 
 
 
-def calculator_probability() -> float:
+def calculator_probability(a) -> float:
     """
     Вычисляет вероятность события.
 
@@ -12,10 +12,10 @@ def calculator_probability() -> float:
     Return:
         Веротность события
     """
-
     event_type, event = main()
     if event_type == "coin":
         prob = 1 / 2 
         return prob #f"{prob}%"
     elif event_type == "dice":
         return (1 / 6)
+    
