@@ -1,7 +1,7 @@
 # test_probability.py
 
 import unittest
-from probability import calculator_probability
+from app import calculator_probability
 
 
 class TestProbability(unittest.TestCase):

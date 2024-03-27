@@ -1,4 +1,3 @@
-
 from typing import Tuple, Union
 
 
@@ -12,16 +11,18 @@ def main() -> Tuple[str, Union[int, str]]:
     """
     event_type = input("Выберите тип события:\n1 - coin\n2 - dice\n")
     while event_type != "1" or event_type != "2":
-        if event_type == '1':
+        if event_type == "1":
             type = "coin"
             break
 
-        elif event_type == '2':
+        elif event_type == "2":
             type = "dice"
             break
 
         else:
-            event_type = input("Повторите попытку ввода значения ЦИФРОЙ:\n1 - coin\n2 - dice\n")
+            event_type = input(
+                "Повторите попытку ввода значения ЦИФРОЙ:\n1 - coin\n2 - dice\n"
+            )
 
     if event_type == "1":
         event = input("Выбирите сторону монетки:\n1 - O\n2 - P\n")
