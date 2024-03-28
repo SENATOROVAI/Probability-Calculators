@@ -1,4 +1,4 @@
-# Probability Calculator
+# Probability Calculator.
 
 This Python project calculates the probability of an event occurrence for different scenarios such as coin flipping and dice rolling. It includes modules for defining events, computing probabilities, and testing the functionality.
 
